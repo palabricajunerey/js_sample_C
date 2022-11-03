@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container">
+        <p>Click the button to call the function</p>
+
+        <form>
+            <input name="fnum" placeholder="Enter a Number">
+            <input name="snum" placeholder="Enter Number">
+            <button onclick="sayHello(parseInt(fnum.value), parseInt(snum.value))">Add a number</button>
+        </form>
+    </div>
+
+    <script>
+        function sayHello(fnum, snum){
+
+            let sum;
+            if(fnum == "" || snum == ""){
+                return;
+            }
+            // alert(name + " is " + age + " years old.");
+            sum = fnum + snum;
+            alert("Sum is: " + sum);
+
+            // if(((2 == 2) || (1==1)) && 2==3){
+            //     alert("true")
+            // }else{
+            //     alert("false")
+            // }
+            // document.getElementById('hello').innerHTML = name + " is " + age + " years old.";
+           
+            // if(age == ""){
+            //     return;
+            // }    
+           
+
+            
+            // document.write(name + " is " + age + " years old.");
+        }
+
+        let car = new Array("volvo", "mercedes", "toyota", "ford", "hyundai", "Nissan");
+        let fruits = ["mango", "apple", "banana"];
+        // alert("arrays: " + fruits[1] + " " + car[0])
+
+        let i;
+        for (i = 0; i < car.length; i++){
+            document.write("Car = " + car[i] + "<br>");
+        }
+        /*
+        //for loop conditional statement
+        for(init; condition; increment){
+            //execution
+        }
+        
+        */
+        
+    </script>
+</body>
+</html>
