@@ -14,20 +14,20 @@
         <form>
             <input name="fnum" placeholder="Enter a Number">
             <input name="snum" placeholder="Enter Number">
-            <button onclick="sayHello(parseInt(fnum.value), parseInt(snum.value))">Add a number</button>
+            <button onclick="add(fnum.value, snum.value)">Add a number</button>
         </form>
     </div>
     <h1>sa online gin edit</h1>
 
     <script>
-        function sayHello(fnum, snum){
+        function add(fnum, snum){
 
             let sum;
             if(fnum == "" || snum == ""){
                 return;
             }
             // alert(name + " is " + age + " years old.");
-            sum = fnum + snum;
+            sum = parseInt(fnum) + parseInt(snum);
             alert("Sum is: " + sum);
 
             // if(((2 == 2) || (1==1)) && 2==3){
@@ -50,13 +50,26 @@
         let fruits = ["mango", "apple", "banana"];
         // alert("arrays: " + fruits[1] + " " + car[0])
 
+
+        document.write("<h2>Using for loop</h2>")
         let i;
         for (i = 0; i < car.length; i++){
             document.write("Car = " + car[i] + "<br>");
         }
+
+        // for (i = car.length - 1; i >= 0; i--){
+        //     document.write("Car = " + car[i] + "<br>");
+        // }
+        document.write("<h2>Using while loop</h2>")
+        let j = 0;
+        while(j < car.length){
+            document.write("Car = " + car[j] + "<br>");
+            j++;
+        }
+        
         /*
         //for loop conditional statement
-        for(init; condition; increment){
+        for(init; condition; increment/decrement){
             //execution
         }
         
