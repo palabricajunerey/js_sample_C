@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.min.css" />
 </head>
+
 <body>
     <div class="container">
         <p>Click the button to call the function</p>
@@ -20,61 +22,131 @@
     <h1>sa online gin edit</h1>
 
     <script>
-        function add(fnum, snum){
+        // function add(fnum, snum) {
 
-            let sum;
-            if(fnum == "" || snum == ""){
-                return;
-            }
-            // alert(name + " is " + age + " years old.");
-            sum = parseInt(fnum) + parseInt(snum);
-            alert("Sum is: " + sum);
+        //     // let sum;
+        //     // if (fnum == "" || snum == "") {
+        //     //     return;
+        //     // }
+        //     // alert(name + " is " + age + " years old.");
+        //     sum = parseInt(fnum) + parseInt(snum);
+        //     alert("Sum is: " + sum);
 
-            // if(((2 == 2) || (1==1)) && 2==3){
-            //     alert("true")
-            // }else{
-            //     alert("false")
-            // }
-            // document.getElementById('hello').innerHTML = name + " is " + age + " years old.";
-           
-            // if(age == ""){
-            //     return;
-            // }    
-           
+        //     // if(((2 == 2) || (1==1)) && 2==3){
+        //     //     alert("true")
+        //     // }else{
+        //     //     alert("false")
+        //     // }
+        //     // document.getElementById('hello').innerHTML = name + " is " + age + " years old.";
 
-            
-            // document.write(name + " is " + age + " years old.");
-        }
-
-        let car = new Array("volvo", "mercedes", "toyota", "ford", "hyundai", "Nissan");
-        let fruits = ["mango", "apple", "banana"];
-        // alert("arrays: " + fruits[1] + " " + car[0])
+        //     // if(age == ""){
+        //     //     return;
+        //     // }    
 
 
-        document.write("<h2>Using for loop</h2>")
-        let i;
-        for (i = 0; i < car.length; i++){
-            document.write("Car = " + car[i] + "<br>");
-        }
 
-        // for (i = car.length - 1; i >= 0; i--){
-        //     document.write("Car = " + car[i] + "<br>");
+        //     // document.write(name + " is " + age + " years old.");
         // }
-        document.write("<h2>Using while loop</h2>")
-        let j = 0;
-        while(j < car.length){
-            document.write("Car = " + car[j] + "<br>");
-            j++;
+
+        // let car = new Array("volvo", "mercedes", "toyota", "ford", "hyundai", "Nissan");
+        // let fruits = ["mango", "apple", "banana"];
+        // // alert("arrays: " + fruits[1] + " " + car[0])
+
+
+        // document.write("<h2>Using for loop</h2>")
+        // let i;
+        // // for (i = 0; i < car.length; i++) {
+        // //     if (i == 2) {
+        // //         break;
+        // //     }
+        // //     document.write("Car = " + car[i] + "<br>");
+        // // }
+
+        // // for (i = car.length - 1; i >= 0; i--){
+        // //     document.write("Car = " + car[i] + "<br>");
+        // // }
+        // // document.write("<h2>Using while loop</h2>")
+        // // let j = 0;
+        // // while(j < car.length){
+        // //     document.write("Car = " + car[j] + "<br>");
+        // //     j++;
+        // // }
+
+        // /*
+        // //for loop conditional statement
+        // for(init; condition; increment/decrement){
+        //     //execution
+        // }
+        
+        // */
+        // //digit counter using while-loop
+        // // let num = parseInt(prompt("Enter the number", "Enter . . ."));
+
+        // // let count = 0;
+
+        // // while(num > 0){ //condition
+        // //     num = Math.trunc(num / 10); //12.300 / 10
+        // //     count++; //3
+        // // }
+        // // alert("Digits: " + count);
+        // // switch(){
+        // //     case 1:
+        // //         //execution
+        // //     case 2:
+        // //         //execution
+        // //     default:
+        // //         //execute
+        // // }
+
+        //let userInput = prompt("Enter a character", "Enter . . .");
+        
+        // switch (userInput.toLowerCase()) {
+        //     case 'a':
+        //     case 'e':
+        //     case 'i':
+        //     case 'o':
+        //     case 'u':
+        //         document.write(userInput.toUpperCase() + " is a vowel");
+        //         break;
+        //     default:
+        //         document.write(userInput.toUpperCase() + " is a consonant")
+        //         break;
+
+       // }
+
+        //object
+        //name:value
+        // let person = {
+        //     gender:"female",
+        //     hairColor: "black",
+        //     age: 20,
+        //     name: "Juan"
+        // };
+
+        // document.write(person.gender);
+
+        //err_handling
+        var a = 100
+
+        try {
+            var s = a.toUpperCase();
+            document.write("Value of a variable is : " + s)
+        } catch (error) {
+            alert(error)
+        }finally{
+            document.write("always executes your codes at finally block")
         }
-        
-        /*
-        //for loop conditional statement
-        for(init; condition; increment/decrement){
-            //execution
-        }
-        
-        */
-        
+
+        // function cheer(score) {
+        //     if (score === 147) {
+        //         return 'Maximum!';
+        //     }
+        //     if (score > 100) {
+        //         return 'Century!';
+        //     }
+        // }
+
     </script>
 </body>
+
 </html>
